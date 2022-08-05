@@ -1,0 +1,61 @@
+<html>
+  <head>
+    
+
+    <style>
+
+      body {
+        background-color: black;
+
+      }
+
+      h1 {
+        color:white;
+        font-size: 50px;
+      }
+      
+      ul {
+         list-style-type: none;
+         display : flex;
+         justify-content:space-around;
+      }
+
+      ul li {
+        color:white;
+        font-size: 35px;   
+
+         text-decoration: none; 
+      }
+
+      li.actif {
+        color:green;
+
+      }
+    </style>
+
+
+
+  </head>
+
+
+  <body>
+
+    
+    <h1>{{titre}}</h1>
+    <ul>
+      {% for item in etapes %}
+      <li class="
+
+          {% if loop.index0 == etape_active %}
+            actif
+          {% endif %}
+
+        ">{{item}}</li>
+
+      {% endfor %}
+    </ul>
+
+
+  </body>
+
+</html>
